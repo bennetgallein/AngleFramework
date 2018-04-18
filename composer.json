@@ -1,0 +1,17 @@
+{
+    "name": "bennetgallein/angle-framework",
+    "description": "A PHP Framework for the Angle Network",
+    "type": "project",
+    "authors": [
+        {
+            "name": "bennetgallein",
+            "email": "bennet@intranetproject.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Angle\\": "src/"
+        }
+    }
+}
