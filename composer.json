@@ -8,10 +8,14 @@
             "email": "bennet@intranetproject.net"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "Angle\\": "src/"
         }
+    },
+    "require": {
+        "php": ">=7.0",
+        "mikey179/vfsStream": "^1.6"
     }
+
 }

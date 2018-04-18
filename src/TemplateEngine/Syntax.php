@@ -14,8 +14,9 @@ class Syntax {
     public $tokens = array();
 
     public function __construct() {
-        $this->addRule("{?:([\w\d]+)( = .*)}", "<?php $$1$2; ?>");
-        $this->addRule("{? :([\w\d]+ }", "<?= $$1; ?>");
+        $this->addRule('/<!-- :([\w\d]+) -->/', '<?= $$1 ?>');
+        /*$this->addRule("{?:([\w\d]\+)( = .\*)}", "<?php $$1$2; ?>");
+        $this->addRule("{ ?:([\w\d]\+) }", "<?= $$1; ?>");*/
     }
 
     public function addRule($pattern, $replacement) {

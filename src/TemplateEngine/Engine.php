@@ -8,6 +8,7 @@
 
 namespace Angle\Engine\Template;
 
+use org\bovigo\vfs\vfsStream;
 
 class Engine {
 
@@ -32,15 +33,18 @@ class Engine {
 
     public function render($view, $params = []) {
         if (!empty($params)) extract($params);
+        $viewArray = explode('/', $view);
+        $viewPath  = implode('/', $viewArray);
 
-        $file = $this->compile(file_get_contents($view));
+        vfsStream::setup($viewPath);
+
+        $file = vfsStream::url($view . '.php');
+        $this->compile(file_get_contents($view));
+
+        file_put_contents($file, $this->getStream());
 
         ob_start();
-        echo $file;
-        $file = ob_get_clean();
-        $this->display($file);
+        include $file;
+        ob_end_flush();
+        }
     }
-    private function display($content) {
-        echo $content;
-    }
-}

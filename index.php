@@ -8,6 +8,6 @@
 require("vendor/autoload.php");
 
 $engine = new \Angle\Engine\Template\Engine();
-$engine->render("/var/www/ProjectAngle/AngleFramework/views/test.tmp", [
+$engine->render("views/test.tmp", [
     "test" => "Hello World"
 ]);
