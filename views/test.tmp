@@ -1,2 +1,4 @@
 { :test }
-<h1>wtf</h1>
+{ foreach :post in :posts with :key }
+    { :posts.test1 }
+{ endforeach }
