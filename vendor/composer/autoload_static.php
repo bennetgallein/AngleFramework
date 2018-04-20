@@ -7,6 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInitbbff7135bb2d256935475e0d5b02a440
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+        ),
+        'F' => 
+        array (
+            'Fig\\Http\\Message\\' => 17,
+        ),
         'A' => 
         array (
             'Angle\\' => 6,
@@ -14,6 +22,14 @@ class ComposerStaticInitbbff7135bb2d256935475e0d5b02a440
     );
 
     public static $prefixDirsPsr4 = array (
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Fig\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fig/http-message-util/src',
+        ),
         'Angle\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -31,8 +47,20 @@ class ComposerStaticInitbbff7135bb2d256935475e0d5b02a440
     );
 
     public static $classMap = array (
+        'Angle\\Engine\\Router\\Collection' => __DIR__ . '/../..' . '/src/Engine/Router/Collection.php',
+        'Angle\\Engine\\Router\\Route' => __DIR__ . '/../..' . '/src/Engine/Router/Route.php',
+        'Angle\\Engine\\Router\\Router' => __DIR__ . '/../..' . '/src/Engine/Router/Router.php',
         'Angle\\Engine\\Template\\Engine' => __DIR__ . '/../..' . '/src/TemplateEngine/Engine.php',
         'Angle\\Engine\\Template\\Syntax' => __DIR__ . '/../..' . '/src/TemplateEngine/Syntax.php',
+        'Fig\\Http\\Message\\RequestMethodInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/RequestMethodInterface.php',
+        'Fig\\Http\\Message\\StatusCodeInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/StatusCodeInterface.php',
+        'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
+        'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
+        'Psr\\Http\\Message\\ResponseInterface' => __DIR__ . '/..' . '/psr/http-message/src/ResponseInterface.php',
+        'Psr\\Http\\Message\\ServerRequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/ServerRequestInterface.php',
+        'Psr\\Http\\Message\\StreamInterface' => __DIR__ . '/..' . '/psr/http-message/src/StreamInterface.php',
+        'Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
+        'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
         'org\\bovigo\\vfs\\DotDirectory' => __DIR__ . '/..' . '/mikey179/vfsStream/src/main/php/org/bovigo/vfs/DotDirectory.php',
         'org\\bovigo\\vfs\\Quota' => __DIR__ . '/..' . '/mikey179/vfsStream/src/main/php/org/bovigo/vfs/Quota.php',
         'org\\bovigo\\vfs\\content\\FileContent' => __DIR__ . '/..' . '/mikey179/vfsStream/src/main/php/org/bovigo/vfs/content/FileContent.php',

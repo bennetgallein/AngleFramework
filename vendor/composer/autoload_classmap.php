@@ -6,8 +6,20 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Angle\\Engine\\Router\\Collection' => $baseDir . '/src/Engine/Router/Collection.php',
+    'Angle\\Engine\\Router\\Route' => $baseDir . '/src/Engine/Router/Route.php',
+    'Angle\\Engine\\Router\\Router' => $baseDir . '/src/Engine/Router/Router.php',
     'Angle\\Engine\\Template\\Engine' => $baseDir . '/src/TemplateEngine/Engine.php',
     'Angle\\Engine\\Template\\Syntax' => $baseDir . '/src/TemplateEngine/Syntax.php',
+    'Fig\\Http\\Message\\RequestMethodInterface' => $vendorDir . '/fig/http-message-util/src/RequestMethodInterface.php',
+    'Fig\\Http\\Message\\StatusCodeInterface' => $vendorDir . '/fig/http-message-util/src/StatusCodeInterface.php',
+    'Psr\\Http\\Message\\MessageInterface' => $vendorDir . '/psr/http-message/src/MessageInterface.php',
+    'Psr\\Http\\Message\\RequestInterface' => $vendorDir . '/psr/http-message/src/RequestInterface.php',
+    'Psr\\Http\\Message\\ResponseInterface' => $vendorDir . '/psr/http-message/src/ResponseInterface.php',
+    'Psr\\Http\\Message\\ServerRequestInterface' => $vendorDir . '/psr/http-message/src/ServerRequestInterface.php',
+    'Psr\\Http\\Message\\StreamInterface' => $vendorDir . '/psr/http-message/src/StreamInterface.php',
+    'Psr\\Http\\Message\\UploadedFileInterface' => $vendorDir . '/psr/http-message/src/UploadedFileInterface.php',
+    'Psr\\Http\\Message\\UriInterface' => $vendorDir . '/psr/http-message/src/UriInterface.php',
     'org\\bovigo\\vfs\\DotDirectory' => $vendorDir . '/mikey179/vfsStream/src/main/php/org/bovigo/vfs/DotDirectory.php',
     'org\\bovigo\\vfs\\Quota' => $vendorDir . '/mikey179/vfsStream/src/main/php/org/bovigo/vfs/Quota.php',
     'org\\bovigo\\vfs\\content\\FileContent' => $vendorDir . '/mikey179/vfsStream/src/main/php/org/bovigo/vfs/content/FileContent.php',

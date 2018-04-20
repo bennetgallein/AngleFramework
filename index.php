@@ -7,12 +7,22 @@
  */
 require("vendor/autoload.php");
 
-$engine = new \Angle\Engine\Template\Engine();
-$engine->render("views/test.tmp", [
-    "test" => "Hello World",
-    "posts" => [
-        "test1" => "hi",
-        "test2" => "hi2",
-        "test3" => "hi3"
-    ]
-]);
+use \Angle\Engine\Template\Engine;
+use \Angle\Engine\Router\Collection;
+use \Angle\Engine\Router\Route;
+use \Angle\Engine\Router\Router;
+
+$engine = new Engine();
+
+$router = new Collection();
+
+$router->attachRoute(new Route('/', array(
+    '_controller' => 'Angle\Examples\Controllers\User::display',
+    'methods' => 'GET'
+)));
+
+$router = new Router($router);
+$router->setBasePath('');
+$route = $router->matchCurrentRequest();
+
+var_dump($route);
