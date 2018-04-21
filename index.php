@@ -17,12 +17,10 @@ $engine = new Engine();
 $router = new Collection();
 
 $router->attachRoute(new Route('/', array(
-    '_controller' => 'Angle\Examples\Controllers\User::display',
+    '_controller' => '\Angle\Examples\Controllers\User::display',
+    'parameters' => ["engine" => $engine],
     'methods' => 'GET'
 )));
 
 $router = new Router($router);
-$router->setBasePath('');
 $route = $router->matchCurrentRequest();
-
-var_dump($route);

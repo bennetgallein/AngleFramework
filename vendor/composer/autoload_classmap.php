@@ -11,6 +11,7 @@ return array(
     'Angle\\Engine\\Router\\Router' => $baseDir . '/src/Engine/Router/Router.php',
     'Angle\\Engine\\Template\\Engine' => $baseDir . '/src/TemplateEngine/Engine.php',
     'Angle\\Engine\\Template\\Syntax' => $baseDir . '/src/TemplateEngine/Syntax.php',
+    'Angle\\Examples\\Controllers\\User' => $baseDir . '/Controllers/User.php',
     'Fig\\Http\\Message\\RequestMethodInterface' => $vendorDir . '/fig/http-message-util/src/RequestMethodInterface.php',
     'Fig\\Http\\Message\\StatusCodeInterface' => $vendorDir . '/fig/http-message-util/src/StatusCodeInterface.php',
     'Psr\\Http\\Message\\MessageInterface' => $vendorDir . '/psr/http-message/src/MessageInterface.php',

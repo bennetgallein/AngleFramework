@@ -11,7 +11,7 @@ namespace Angle\Examples\Controllers;
 
 class User {
 
-    public static function display()  {
+    public static function display($engine)  {
         $engine->render("views/test.tmp", [
             "test" => "Hello World",
             "posts" => [

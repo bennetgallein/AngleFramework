@@ -84,7 +84,7 @@ class Router {
     public function generate($routeName, array $params = array()) {
         // Check if route exists
         if (!isset($this->namedRoutes[$routeName])) {
-            throw new Exception("No route with the name $routeName has been found.");
+            throw new \Exception("No route with the name $routeName has been found.");
         }
         $route = $this->namedRoutes[$routeName];
         $url = $route->getUrl();

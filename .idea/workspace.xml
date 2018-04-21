@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="created readme and made it completly work correctly.">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Engine/Router/Collection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Engine/Router/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Engine/Router/Router.php" afterDir="false" />
+    <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/AngleFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AngleFramework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Router/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,23 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Engine/Router/Router.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-              <folding>
-                <element signature="e#120#134#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#120#154#0#PHP" expanded="true" />
               </folding>
@@ -54,11 +37,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Route.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Engine/Router/Route.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-91">
+              <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -71,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/TemplateEngine/Engine.php" />
         <option value="$PROJECT_DIR$/views/test.tmp" />
         <option value="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" />
@@ -79,8 +79,9 @@
         <option value="$PROJECT_DIR$/src/Engine/Router/Collection.php" />
         <option value="$PROJECT_DIR$/src/Engine/Router/Route.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/Controllers/User.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Engine/Router/Router.php" />
+        <option value="$PROJECT_DIR$/Controllers/User.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -197,7 +198,7 @@
       <updated>1524076277229</updated>
       <workItem from="1524076278476" duration="7319000" />
       <workItem from="1524172051252" duration="184000" />
-      <workItem from="1524229150915" duration="3719000" />
+      <workItem from="1524229150915" duration="5160000" />
     </task>
     <task id="LOCAL-00001" summary="template engine first work">
       <created>1524079998056</created>
@@ -220,11 +221,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524083670117</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Routing Engine is implemented basically, but not working atm, maybe fix this evening.">
+      <created>1524234087357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524234087357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11222000" />
+    <option name="totallyTimeSpent" value="12663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="30" width="1920" height="997" extended-state="6" />
@@ -261,7 +269,8 @@
     <MESSAGE value="template engine first work" />
     <MESSAGE value="let's even make this work.." />
     <MESSAGE value="created readme and made it completly work correctly." />
-    <option name="LAST_COMMIT_MESSAGE" value="created readme and made it completly work correctly." />
+    <MESSAGE value="Routing Engine is implemented basically, but not working atm, maybe fix this evening." />
+    <option name="LAST_COMMIT_MESSAGE" value="Routing Engine is implemented basically, but not working atm, maybe fix this evening." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -296,20 +305,6 @@
     <entry file="file://$PROJECT_DIR$/src/Engine/Router/Collecation.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/Router/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/Router/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -326,15 +321,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Engine/Router/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state relative-caret-position="1049">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
           <folding>
             <element signature="e#120#134#0#PHP" expanded="true" />
           </folding>
@@ -343,15 +338,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/Router/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/Router/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#120#154#0#PHP" expanded="true" />
           </folding>

@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Fig\\Http\\Message\\' => array($vendorDir . '/fig/http-message-util/src'),
+    'Angle\\Examples\\Controllers\\' => array($baseDir . '/Controllers'),
     'Angle\\' => array($baseDir . '/src'),
 );

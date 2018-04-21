@@ -10,7 +10,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Angle\\": "src/"
+            "Angle\\": "src/",
+            "Angle\\Examples\\Controllers\\": "Controllers/"
         }
     },
     "require": {
