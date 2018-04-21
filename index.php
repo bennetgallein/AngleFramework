@@ -12,6 +12,11 @@ use \Angle\Engine\Router\Collection;
 use \Angle\Engine\Router\Route;
 use \Angle\Engine\Router\Router;
 
+
+use Tracy\Debugger;
+
+Debugger::enable();
+
 $engine = new Engine();
 
 $router = new Collection();
