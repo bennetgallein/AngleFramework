@@ -26,7 +26,7 @@ class MySQLHandler {
 
         $this->mysql = new \MySQLi($host, $user, $password, $db);
     }
-    private function query($sql) {
+    public function query($sql) {
         return $this->mysql->query($sql);
     }
     /*
@@ -34,7 +34,7 @@ class MySQLHandler {
      * { "s" => "asd", "i" => 10 }
      *
      */
-    private function prepare($sql, $params = array()) {
+    public function prepare($sql, $params = array()) {
         if ($stmt = $this->mysql->prepare($sql)) {
             foreach ($params as $type => $value) {
                 $stmt->bind_param($type, $value);
@@ -46,7 +46,7 @@ class MySQLHandler {
             return $returner;
         }
     }
-    private function escape($p) {
+    public function escape($p) {
 
     }
 }
