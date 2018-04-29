@@ -155,14 +155,14 @@ class Route {
 
     public function setParameters(array $parameters)
     {
-        $this->parameters = $parameters;
+        $this->parameters = array_merge($this->parameters, $parameters);
     }
 
     public function dispatch()
     {
         $action = explode('::', $this->config['_controller']);
         $instance = new $action[0];
-
+        $_SERVER['debug'] = ($this->parameters);
         if ($this->parametersByName) {
             $this->parameters = array($this->parameters);
         }
