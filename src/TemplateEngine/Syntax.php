@@ -42,7 +42,7 @@ class Syntax {
         $this->addRule("/{endforeach}/", "<?php endforeach; ?>");
     
         // { :list.point } & {:list.point}
-        $this->addRule('/{ :([\w\d]+).(.*) }/', '<?= $$1[\'$2\'] ?>');
+        $this->addRule('/{ :([\w\d]+).([\w\d]+) }/', '<?php echo $$1["$2"]; ?>');
     }
 
     public function addRule($pattern, $replacement) {
