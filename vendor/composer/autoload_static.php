@@ -62,6 +62,7 @@ class ComposerStaticInitbbff7135bb2d256935475e0d5b02a440
         'Angle\\Engine\\Template\\Engine' => __DIR__ . '/../..' . '/src/TemplateEngine/Engine.php',
         'Angle\\Engine\\Template\\Syntax' => __DIR__ . '/../..' . '/src/TemplateEngine/Syntax.php',
         'Angle\\Examples\\Controllers\\User' => __DIR__ . '/../..' . '/Controllers/User.php',
+        'Angle\\Utility\\MySQLHandler' => __DIR__ . '/../..' . '/src/Utility/MySQLHandler.php',
         'Fig\\Http\\Message\\RequestMethodInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/RequestMethodInterface.php',
         'Fig\\Http\\Message\\StatusCodeInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/StatusCodeInterface.php',
         'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',

@@ -27,7 +27,12 @@ class Syntax {
         // { else }
         $this->addRule("/{ else }/", "<?php else: ?>");
         $this->addRule("/{else}/", "<?php else: ?>");
-        
+
+        // { if }
+        $this->addRule("/{ if ([\w\d+])} /", "");
+        $this->addRule("", "");
+
+
         // { endif }
         $this->addRule("/{endif}/", "<?php endif; ?>");
         $this->addRule("/{ endif }/", "<?php endif; ?>");
