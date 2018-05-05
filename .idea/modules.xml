@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AngleBlog/.idea/AngleBlog.iml" filepath="$PROJECT_DIR$/../AngleBlog/.idea/AngleBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/AngleFramework.iml" filepath="$PROJECT_DIR$/.idea/AngleFramework.iml" />
     </modules>
   </component>
