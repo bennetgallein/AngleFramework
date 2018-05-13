@@ -23,3 +23,5 @@ Basic Documentation: The first line is the template language and the second is t
 { endforeach }
 <?php endforeach; ?>
 ```
+
+Hi
