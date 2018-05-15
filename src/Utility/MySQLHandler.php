@@ -47,6 +47,6 @@ class MySQLHandler {
         }
     }
     public function escape($p) {
-
+        return $this->mysql->real_escape_string($p);
     }
 }

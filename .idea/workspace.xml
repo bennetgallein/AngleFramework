@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../AngleBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AngleBlog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngleBlog/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../AngleBlog/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngleBlog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../AngleBlog/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,17 +19,7 @@
     <executablePath>composer</executablePath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Collection.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Engine/RouterEngine/Collection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,43 +79,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AngleFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngleFramework" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AngleFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngleFramework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AngleFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngleFramework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Engine" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AngleFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngleFramework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Engine" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RouterEngine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AngleBlog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ts3cloud-frontend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Engine" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,6 +139,8 @@
       <workItem from="1525617751951" duration="2364000" />
       <workItem from="1525718217161" duration="671000" />
       <workItem from="1525889883138" duration="729000" />
+      <workItem from="1526173431668" duration="265000" />
+      <workItem from="1526354386945" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="template engine first work">
       <created>1524079998056</created>
@@ -300,11 +282,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525718285271</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="moved some files">
+      <created>1526173460873</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1526173460873</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32453000" />
+    <option name="totallyTimeSpent" value="32734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="30" width="1920" height="997" extended-state="6" />
@@ -354,7 +343,8 @@
     <MESSAGE value="weird" />
     <MESSAGE value="testing deployment" />
     <MESSAGE value="change folder name of Router to RouterEngine" />
-    <option name="LAST_COMMIT_MESSAGE" value="change folder name of Router to RouterEngine" />
+    <MESSAGE value="moved some files" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved some files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -362,7 +352,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Engine/RouterEngine/Collection.php">
+    <entry file="file://$PROJECT_DIR$/src/Engine/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/Collection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
@@ -404,7 +401,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/RouterEngine/Route.php">
+    <entry file="file://$PROJECT_DIR$/src/Engine/Route.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2325">
           <caret line="160" column="30" lean-forward="true" selection-start-line="160" selection-start-column="30" selection-end-line="160" selection-end-column="30" />
@@ -512,21 +509,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/RouterEngine/Router.php">
+    <entry file="file://$PROJECT_DIR$/src/Engine/Router.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/RouterEngine/Route.php">
+    <entry file="file://$PROJECT_DIR$/src/Engine/Route.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="160" column="30" selection-start-line="160" selection-start-column="30" selection-end-line="160" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/RouterEngine/Collection.php">
+    <entry file="file://$PROJECT_DIR$/src/Engine/Collection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
