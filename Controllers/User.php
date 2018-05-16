@@ -11,11 +11,11 @@ namespace Angle\Examples\Controllers;
 
 class User {
 
-    public static function display($engine, $id)  {
+    public static function display($engine)  {
         $engine->render("views/test.tmp", [
             "test" => "Hello World",
             "posts" => [
-                "test1" => $id,
+                "test1" => "hi1",
                 "test2" => "hi2",
                 "test3" => "hi3"
             ]

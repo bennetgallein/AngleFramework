@@ -1,4 +1,4 @@
-{ :test }
+{ include("views/header.tmp") }
 { foreach :post in :posts with :key }
     { :posts.test1 }
 { endforeach }

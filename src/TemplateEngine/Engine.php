@@ -32,9 +32,10 @@ class Engine {
     }
 
     public function render($view, $params = []) {
+        $params['engine'] = $this;
         if (!empty($params)) extract($params);
         $viewArray = explode('/', $view);
-        $viewPath  = implode('/', $viewArray);
+        $viewPath = implode('/', $viewArray);
 
         vfsStream::setup($viewPath);
 
@@ -46,5 +47,5 @@ class Engine {
         ob_start();
         include $file;
         ob_end_flush();
-        }
     }
+}

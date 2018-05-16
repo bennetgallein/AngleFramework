@@ -43,6 +43,9 @@ class Syntax {
     
         // { :list.point } & {:list.point}
         $this->addRule('/{ :([\w\d]+).([\w\d]+) }/', '<?php echo $$1["$2"]; ?>');
+
+        // { include("file") }
+        $this->addRule('/({ include\("(.*)"\) })/', '<?php $engine->render("$2"); ?>');
     }
 
     public function addRule($pattern, $replacement) {

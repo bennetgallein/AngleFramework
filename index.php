@@ -21,9 +21,9 @@ $engine = new Engine();
 
 $router = new Collection();
 
-$router->attachRoute(new Route('/id/:id', array(
+$router->attachRoute(new Route('/', array(
     '_controller' => '\Angle\Examples\Controllers\User::display',
-    'parameters' => ["engine" => $engine, 'id' => '\d+'],
+    'parameters' => ["engine" => $engine],
     'methods' => 'GET'
 )));
 

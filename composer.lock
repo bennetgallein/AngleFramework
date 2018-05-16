@@ -154,16 +154,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.4.13",
+            "version": "v2.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "ead5141731a21cfd0710b092351d923549d2b2ad"
+                "reference": "229249212e041bc3cd5d88f65965d9391dad3852"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/ead5141731a21cfd0710b092351d923549d2b2ad",
-                "reference": "ead5141731a21cfd0710b092351d923549d2b2ad",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/229249212e041bc3cd5d88f65965d9391dad3852",
+                "reference": "229249212e041bc3cd5d88f65965d9391dad3852",
                 "shasum": ""
             },
             "require": {
@@ -215,7 +215,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2018-03-23T17:15:58+00:00"
+            "time": "2018-05-04T11:54:21+00:00"
         }
     ],
     "packages-dev": [],
