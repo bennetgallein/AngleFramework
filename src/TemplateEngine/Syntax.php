@@ -29,8 +29,8 @@ class Syntax {
         $this->addRule("/{else}/", "<?php else: ?>");
 
         // { if }
-        $this->addRule("/{ if :([\w\d]+) }/", "<?php if ($1): ?>");
-        $this->addRule("/{if :([\w\d]+)}/", "<?php if ($1): ?>");
+        $this->addRule("/{ if :([\w\d]+) }/", "<?php if ($$1): ?>");
+        $this->addRule("/{if :([\w\d]+)}/", "<?php if ($$1): ?>");
 
 
         // { endif }
