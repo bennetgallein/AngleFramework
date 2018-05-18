@@ -13,7 +13,7 @@ class User {
 
     public static function display($engine)  {
         $engine->render("views/test.tmp", [
-            "test" => "Hello World",
+            "test" => true,
             "posts" => [
                 "test1" => "hi1",
                 "test2" => "hi2",

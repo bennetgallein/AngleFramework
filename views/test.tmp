@@ -1,4 +1,6 @@
 { include("views/header.tmp") }
-{ foreach :post in :posts with :key }
-    { :posts.test1 }
-{ endforeach }
+{ if :test }
+    { foreach :post in :posts with :key }
+        { :posts.test1 }
+    { endforeach }
+{ endif }

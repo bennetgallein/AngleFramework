@@ -25,17 +25,17 @@ class Syntax {
         $this->addRule("/{ foreach :([\w\d]+) in :([\w\d]+) with :([\w\d]+) }/", "<?php foreach ($$2 as $$3 => $$1): ?>");
         
         // { else }
-        /*$this->addRule("/{ else }/", "<?php else: ?>");
+        $this->addRule("/{ else }/", "<?php else: ?>");
         $this->addRule("/{else}/", "<?php else: ?>");
 
         // { if }
-        $this->addRule("/{ if ([\w\d+])} /", "");
-        $this->addRule("", "");
+        $this->addRule("/{ if :([\w\d]+) }/", "<?php if ($1): ?>");
+        $this->addRule("/{if :([\w\d]+)}/", "<?php if ($1): ?>");
 
 
         // { endif }
         $this->addRule("/{endif}/", "<?php endif; ?>");
-        $this->addRule("/{ endif }/", "<?php endif; ?>");*/
+        $this->addRule("/{ endif }/", "<?php endif; ?>");
         
         // {endforeach} & { endforeach }
         $this->addRule("/{ endforeach }/", "<?php endforeach; ?>");

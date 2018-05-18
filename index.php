@@ -7,7 +7,6 @@
  */
 require("vendor/autoload.php");
 
-use \Angle\Engine\Template\Engine;
 use \Angle\Engine\RouterEngine\Collection;
 use \Angle\Engine\RouterEngine\Route;
 use \Angle\Engine\RouterEngine\Router;
@@ -17,7 +16,7 @@ use Tracy\Debugger;
 
 Debugger::enable();
 
-$engine = new Engine();
+$engine = new \Angle\Engine\Template\Engine();
 
 $router = new Collection();
 
