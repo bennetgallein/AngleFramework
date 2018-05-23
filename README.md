@@ -2,6 +2,21 @@
 
 Basic Documentation: The first line is the template language and the second is the PHP equivalent
 
+#### Installation
+Please use this Engine only with composer:
+```json
+"repositories": [{
+  "type": "composer",
+  "url": "https://packages.streamtitties.fun"
+}],
+```
+And 
+```
+"require": {
+    "bennetgallein/angle-framework": "dev-master"
+},
+```
+
 ###### echo Variable
 ```
 { :varname }
