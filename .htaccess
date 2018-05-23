@@ -1,5 +1,7 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteRule !\.(ico|gif|jpg|png|css|js|swf|flv|map|ttf|woff|woff2)$ index.php [QSA,L]
-RewriteRule ^views - [L,NC]
+RewriteRule !\.(ico|gif|jpg|png|css|js|swf|flv|map|ttf|woff|woff2|svg)$ index.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)/(assets|css|imgs)/(.*) views/$2/$3 [L,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ views/$1 [NC,L]
