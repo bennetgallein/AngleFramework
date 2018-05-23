@@ -15,6 +15,8 @@ class Syntax {
 
     public function __construct() {
 
+        // { :var = x }
+
         // {:var} & { :var }
         $this->addRule("/{ :([\w\d]+) }/", "<?= $$1; ?>");
         $this->addRule("/{:([\w\d]+)}/", "<?= $$1; ?>");
@@ -23,7 +25,7 @@ class Syntax {
         $this->addRule("/{ foreach :([\w\d]+) in :([\w\d]+) }/", "<?php foreach ($$2 as $$1): ?>");
         $this->addRule("/{foreach :([\w\d]+) in :([\w\d]+)}/", "<?php foreach ($$2 as $$1): ?>");
         $this->addRule("/{ foreach :([\w\d]+) in :([\w\d]+) with :([\w\d]+) }/", "<?php foreach ($$2 as $$3 => $$1): ?>");
-        
+
         // { else }
         $this->addRule("/{ else }/", "<?php else: ?>");
         $this->addRule("/{else}/", "<?php else: ?>");
@@ -32,15 +34,21 @@ class Syntax {
         $this->addRule("/{ if :([\w\d]+) }/", "<?php if ($$1): ?>");
         $this->addRule("/{if :([\w\d]+)}/", "<?php if ($$1): ?>");
 
+        // { if (:var == x) }
+        $this->addRule("/{ if \(:([\w\d]+) == ([\w\d]+)\) }/", "<?php if ($$1 == $2): ?>");
+
+        // { if (:var.x == x) }
+        $this->addRule("/{ if \(:([\w\d]+).([\w\d]+) == ([\w\d]+)\) }/", "<?php if ($$1['$2'] == $3): ?>");
+
 
         // { endif }
         $this->addRule("/{endif}/", "<?php endif; ?>");
         $this->addRule("/{ endif }/", "<?php endif; ?>");
-        
+
         // {endforeach} & { endforeach }
         $this->addRule("/{ endforeach }/", "<?php endforeach; ?>");
         $this->addRule("/{endforeach}/", "<?php endforeach; ?>");
-    
+
         // { :list.point } & {:list.point}
         $this->addRule('/{ :([\w\d]+).([\w\d]+) }/', '<?php echo $$1["$2"]; ?>');
 
