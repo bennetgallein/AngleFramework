@@ -57,7 +57,7 @@ class Syntax {
 
 
         // { css /url/ist/genau/hier.css }
-        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php APP_URL ?>/views/$2" />');
+        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php APP_URL ?>views/$2" />');
 
     }
 
