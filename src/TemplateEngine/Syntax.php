@@ -59,6 +59,8 @@ class Syntax {
         // { css /url/ist/genau/hier.css }
         $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>views/$2" />');
 
+        // { js /url/to/script.js }
+        $this->addRule('/({ js (.*) })/', '<script src="<?php echo APP_URL; ?>views/$2"></script>');
     }
 
     public function addRule($pattern, $replacement) {
