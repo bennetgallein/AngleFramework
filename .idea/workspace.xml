@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="Engine">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AngleFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AngleFramework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +21,8 @@
       <file leaf-file-name="Syntax.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Syntax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="59" column="101" selection-start-line="59" selection-start-column="101" selection-end-line="59" selection-end-column="101" />
+            <state relative-caret-position="629">
+              <caret line="59" column="92" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -172,7 +160,7 @@
       <workItem from="1525889883138" duration="729000" />
       <workItem from="1526173431668" duration="265000" />
       <workItem from="1526354386945" duration="16000" />
-      <workItem from="1528226943172" duration="1043000" />
+      <workItem from="1528226943172" duration="1770000" />
     </task>
     <task id="LOCAL-00001" summary="template engine first work">
       <created>1524079998056</created>
@@ -328,11 +316,25 @@
       <option name="project" value="LOCAL" />
       <updated>1528227099235</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="{ css /url/ist/genau/hier.css }">
+      <created>1528228012517</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1528228012517</updated>
+    </task>
+    <task id="LOCAL-00024" summary="{ css /url/ist/genau/hier.css }">
+      <created>1528228134388</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1528228134388</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33777000" />
+    <option name="totallyTimeSpent" value="34504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="30" width="1920" height="997" extended-state="6" />
@@ -385,7 +387,8 @@
     <MESSAGE value="change folder name of Router to RouterEngine" />
     <MESSAGE value="moved some files" />
     <MESSAGE value="APP_URL now as default in engine so it needs to be set." />
-    <option name="LAST_COMMIT_MESSAGE" value="APP_URL now as default in engine so it needs to be set." />
+    <MESSAGE value="{ css /url/ist/genau/hier.css }" />
+    <option name="LAST_COMMIT_MESSAGE" value="{ css /url/ist/genau/hier.css }" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -580,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Syntax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="59" column="101" selection-start-line="59" selection-start-column="101" selection-end-line="59" selection-end-column="101" />
+        <state relative-caret-position="629">
+          <caret line="59" column="92" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
         </state>
       </provider>
     </entry>
