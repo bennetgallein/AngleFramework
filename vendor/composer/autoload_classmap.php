@@ -6,9 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Angle\\Engine\\Router\\Collection' => $baseDir . '/src/Engine/Router/Collection.php',
-    'Angle\\Engine\\Router\\Route' => $baseDir . '/src/Engine/Router/Route.php',
-    'Angle\\Engine\\Router\\Router' => $baseDir . '/src/Engine/Router/Router.php',
+    'Angle\\Engine\\RouterEngine\\Collection' => $baseDir . '/src/Engine/Collection.php',
+    'Angle\\Engine\\RouterEngine\\Route' => $baseDir . '/src/Engine/Route.php',
+    'Angle\\Engine\\RouterEngine\\Router' => $baseDir . '/src/Engine/Router.php',
     'Angle\\Engine\\Template\\Engine' => $baseDir . '/src/TemplateEngine/Engine.php',
     'Angle\\Engine\\Template\\Syntax' => $baseDir . '/src/TemplateEngine/Syntax.php',
     'Angle\\Examples\\Controllers\\User' => $baseDir . '/Controllers/User.php',

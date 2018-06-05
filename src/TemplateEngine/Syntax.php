@@ -54,6 +54,11 @@ class Syntax {
 
         // { include("file") }
         $this->addRule('/({ include\("(.*)"\) })/', '<?php $engine->render("$2"); ?>');
+
+
+        // { css /url/ist/genau/hier.css }
+        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php APP_URL ?>/views/$2" />');
+
     }
 
     public function addRule($pattern, $replacement) {

@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../AngleBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AngleBlog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AngleBlog/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../AngleBlog/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AngleBlog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../AngleBlog/index.php" afterDir="false" />
+    <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="Engine">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AngleFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AngleFramework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +29,17 @@
     <executablePath>composer</executablePath>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Syntax.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Syntax.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="719">
+              <caret line="59" column="101" selection-start-line="59" selection-start-column="101" selection-end-line="59" selection-end-column="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,11 +56,11 @@
         <option value="$PROJECT_DIR$/src/Utility/MySQLHandler.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Controllers/User.php" />
-        <option value="$PROJECT_DIR$/src/TemplateEngine/Engine.php" />
         <option value="$PROJECT_DIR$/src/Engine/Router/Route.php" />
-        <option value="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" />
-        <option value="$PROJECT_DIR$/../AngleBlog/composer.json" />
         <option value="$PROJECT_DIR$/../AngleBlog/.gitlab-ci.yml" />
+        <option value="$PROJECT_DIR$/src/TemplateEngine/Engine.php" />
+        <option value="$PROJECT_DIR$/../AngleBlog/composer.json" />
+        <option value="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" />
       </list>
     </option>
   </component>
@@ -85,7 +105,18 @@
           <expand>
             <path>
               <item name="AngleFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngleBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="AngleFramework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngleFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngleFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngleFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngleFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TemplateEngine" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -95,7 +126,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ts3cloud-frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -141,6 +172,7 @@
       <workItem from="1525889883138" duration="729000" />
       <workItem from="1526173431668" duration="265000" />
       <workItem from="1526354386945" duration="16000" />
+      <workItem from="1528226943172" duration="1043000" />
     </task>
     <task id="LOCAL-00001" summary="template engine first work">
       <created>1524079998056</created>
@@ -289,14 +321,22 @@
       <option name="project" value="LOCAL" />
       <updated>1526173460873</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="APP_URL now as default in engine so it needs to be set.">
+      <created>1528227099235</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1528227099235</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32734000" />
+    <option name="totallyTimeSpent" value="33777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="30" width="1920" height="997" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -344,7 +384,8 @@
     <MESSAGE value="testing deployment" />
     <MESSAGE value="change folder name of Router to RouterEngine" />
     <MESSAGE value="moved some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved some files" />
+    <MESSAGE value="APP_URL now as default in engine so it needs to be set." />
+    <option name="LAST_COMMIT_MESSAGE" value="APP_URL now as default in engine so it needs to be set." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Engine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -488,31 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Syntax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AngleBlog/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AngleBlog/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -527,6 +540,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Engine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AngleBlog/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AngleBlog/vendor/bennetgallein/angle-framework/src/TemplateEngine/Engine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Syntax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="59" column="101" selection-start-line="59" selection-start-column="101" selection-end-line="59" selection-end-column="101" />
         </state>
       </provider>
     </entry>
