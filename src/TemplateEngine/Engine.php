@@ -32,6 +32,7 @@ class Engine {
     }
 
     public function render($view, $params = []) {
+        $params["app_url"] = APP_URL;
         $params['engine'] = $this;
         if (!empty($params)) extract($params);
         $viewArray = explode('/', $view);
