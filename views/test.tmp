@@ -1,6 +1,11 @@
 { include("views/header.tmp") }
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 { if :test }
     { foreach :post in :posts with :key }
         { :posts.test1 }
     { endforeach }
 { endif }
+</body>

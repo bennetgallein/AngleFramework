@@ -20,6 +20,8 @@ $engine = new \Angle\Engine\Template\Engine();
 
 $router = new Collection();
 
+define("APP_URL", __DIR__ . "/");
+define("FILE_URL", __DIR__ . "/");
 $router->attachRoute(new Route('/', array(
     '_controller' => '\Angle\Examples\Controllers\User::display',
     'parameters' => ["engine" => $engine],
