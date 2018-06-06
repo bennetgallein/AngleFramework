@@ -41,7 +41,6 @@ class Engine {
         vfsStream::setup($viewPath);
 
         $file = vfsStream::url($view . '.php');
-        vfsStream::copyFromFileSystem(FILE_URL . "views");
         $this->compile(file_get_contents($view));
 
         file_put_contents($file, $this->getStream());
