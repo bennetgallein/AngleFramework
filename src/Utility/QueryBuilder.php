@@ -41,7 +41,7 @@ class QueryBuilder {
     protected function __clone() {
     }
 
-    protected function __construct($host, $database, $user, $password) {
+    public function __construct($host, $database, $user, $password) {
         try {
             $pdo = new PDO("mysql:host=" . $host . ";dbname=" . $database . ";charset=utf8", $user, $password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
