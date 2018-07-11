@@ -267,4 +267,10 @@ class QueryBuilder {
     public function closeConnection() {
         $this->connection = null;
     }
+
+    public function resetClass() {
+        foreach ($this as $key) {
+            unset($this->$key);
+        }
+    }
 }
