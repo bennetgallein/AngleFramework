@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0452aaae-ca97-4c0c-85a3-789803fc8fe8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/QueryBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TemplateEngine/Engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemplateEngine/Engine.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,20 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MySQLHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utility/MySQLHandler.php">
+      <file leaf-file-name="Engine.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Engine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryBuilder.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Utility/QueryBuilder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="258" column="42" selection-start-line="258" selection-start-column="42" selection-end-line="258" selection-end-column="42" />
+            <state relative-caret-position="300">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -64,9 +55,9 @@
         <option value="$PROJECT_DIR$/views/css/style.css" />
         <option value="$PROJECT_DIR$/views/test.tmp" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/src/TemplateEngine/Engine.php" />
         <option value="$PROJECT_DIR$/src/TemplateEngine/Syntax.php" />
         <option value="$PROJECT_DIR$/src/Utility/QueryBuilder.php" />
+        <option value="$PROJECT_DIR$/src/TemplateEngine/Engine.php" />
       </list>
     </option>
   </component>
@@ -208,7 +199,9 @@
       <workItem from="1529159810461" duration="1505000" />
       <workItem from="1529164703342" duration="27000" />
       <workItem from="1531316306905" duration="296000" />
-      <workItem from="1531317018119" duration="38000" />
+      <workItem from="1531317018119" duration="655000" />
+      <workItem from="1531430786633" duration="9000" />
+      <workItem from="1532904918940" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="template engine first work">
       <created>1524079998056</created>
@@ -441,11 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531316362962</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="I guess this should clear some things up">
+      <created>1531317071811</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1531317071811</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38006000" />
+    <option name="totallyTimeSpent" value="38653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1004" extended-state="6" />
@@ -479,7 +479,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working routing engine + template engine. wuhu" />
     <MESSAGE value="Advanced Debugging" />
     <MESSAGE value="MySQL Handler class" />
     <MESSAGE value="removed if conditions for now" />
@@ -504,7 +503,8 @@
     <MESSAGE value="Added QueryBuilder class." />
     <MESSAGE value="visibility changes" />
     <MESSAGE value="added reset function to enable total reset." />
-    <option name="LAST_COMMIT_MESSAGE" value="added reset function to enable total reset." />
+    <MESSAGE value="I guess this should clear some things up" />
+    <option name="LAST_COMMIT_MESSAGE" value="I guess this should clear some things up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -512,6 +512,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Utility/MySQLHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utility/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="258" column="42" selection-start-line="258" selection-start-column="42" selection-end-line="258" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utility/MySQLHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utility/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="258" column="42" selection-start-line="258" selection-start-column="42" selection-end-line="258" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utility/MySQLHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -802,10 +830,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Engine.php">
+    <entry file="file://$PROJECT_DIR$/src/Utility/QueryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        <state relative-caret-position="534">
+          <caret line="258" column="42" selection-start-line="258" selection-start-column="42" selection-end-line="258" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -816,10 +844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utility/QueryBuilder.php">
+    <entry file="file://$PROJECT_DIR$/src/TemplateEngine/Engine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="258" column="42" selection-start-line="258" selection-start-column="42" selection-end-line="258" selection-end-column="42" />
+        <state relative-caret-position="300">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>

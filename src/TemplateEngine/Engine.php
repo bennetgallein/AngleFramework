@@ -23,7 +23,7 @@ class Engine {
         $this->stream = $stream;
     }
 
-    private function compile($stream) {
+    public function compile($stream) {
         $this->setStream($stream);
         $this->tokens = new Syntax();
         foreach ($this->tokens->getTokens() as $token) {
