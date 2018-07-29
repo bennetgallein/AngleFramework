@@ -9,10 +9,12 @@
 namespace Angle\Examples\Controllers;
 
 
+use Angle\Engine\Template\Engine;
+
 class User {
 
-    public static function display($engine)  {
-        $engine->render("views/test.tmp", [
+    public static function display(Engine $engine)  {
+        $a = $engine->compile("views/test.tmp", [
             "test" => true,
             "posts" => [
                 "test1" => "hi1",
@@ -20,6 +22,7 @@ class User {
                 "test3" => "hi3"
             ]
         ]);
+        dumpe($a);
     }
 
 }

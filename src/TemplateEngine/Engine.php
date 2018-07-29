@@ -23,7 +23,7 @@ class Engine {
         $this->stream = $stream;
     }
 
-    public function compile($stream) {
+    private function localCompile($stream) {
         $this->setStream($stream);
         $this->tokens = new Syntax();
         foreach ($this->tokens->getTokens() as $token) {
@@ -41,12 +41,34 @@ class Engine {
         vfsStream::setup($viewPath);
 
         $file = vfsStream::url($view . '.php');
-        $this->compile(file_get_contents($view));
+        $this->localCompile(file_get_contents($view));
 
         file_put_contents($file, $this->getStream());
 
         ob_start();
         include $file;
         ob_end_flush();
+    }
+
+    public function compile($view, $params = []) {
+        $params["app_url"] = APP_URL;
+        $params['engine'] = $this;
+        if (!empty($params)) extract($params);
+        $viewArray = explode('/', $view);
+        $viewPath = implode('/', $viewArray);
+
+        vfsStream::setup($viewPath);
+
+        $file = vfsStream::url($view . '.php');
+        $this->localCompile(file_get_contents($view));
+
+        file_put_contents($file, $this->getStream());
+
+        ob_start();
+        include $file;
+        $cont = ob_get_contents();
+        ob_end_clean();
+        return $cont;
+
     }
 }
