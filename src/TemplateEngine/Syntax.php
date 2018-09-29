@@ -40,6 +40,8 @@ class Syntax {
         // { if (:var.x == x) }
         $this->addRule("/{ if \(:([\w\d]+).([\w\d]+) == ([\w\d]+)\) }/", "<?php if ($$1['$2'] == $3): ?>");
 
+        // { if (:var == :var) }
+        $this->addRule("/{ if \(:([\w\d]+) == :([\w\d]+)\) }/", "<?php if ($$1 == $$2): ?>");
 
         // { endif }
         $this->addRule("/{endif}/", "<?php endif; ?>");
