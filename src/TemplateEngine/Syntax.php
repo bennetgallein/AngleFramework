@@ -13,12 +13,11 @@ class Syntax {
 
     public $tokens = array();
 
-    private $viewsFolder = "views";
+    private $viewsFolder;
 
-    public function __construct() {
-
+    public function __construct($viewsFolder) {
+        $this->viewsFolder = $viewsFolder;
         // { :var = x }
-
         // {:var} & { :var }
         $this->addRule("/{ :([\w\d]+) }/", "<?= $$1; ?>");
         $this->addRule("/{:([\w\d]+)}/", "<?= $$1; ?>");
@@ -79,8 +78,8 @@ class Syntax {
         return $this->tokens;
     }
 
-    public function setViewsFolder($viewsFolder) {
-        $this->viewsFolder = $viewsFolder;
+    public function setViewsFolder($viewsFolderNew) {
+        $this->viewsFolder = $viewsFolderNew;
     }
 
     public function getViewsFolder() {

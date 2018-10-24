@@ -15,8 +15,8 @@ class Engine {
     protected $tokens;
     private $stream;
 
-    public function __construct() {
-        $this->tokens = new Syntax();
+    public function __construct($viewsFolder = "views") {
+        $this->tokens = new Syntax($viewsFolder);
     }
 
     public function render($view, $params = []) {
@@ -77,5 +77,9 @@ class Engine {
 
     public function setViewsFolder($new) {
         $this->tokens->setViewsFolder($new);
+    }
+
+    public function getViewsFolder() {
+        return $this->tokens->getViewsFolder();
     }
 }
