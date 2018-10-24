@@ -16,6 +16,8 @@ And
     "bennetgallein/angle-framework": "dev-master"
 },
 ```
+### TODO:
+- implement native Logging to a file with different important steps.
 
 ###### echo Variable
 ```
@@ -39,4 +41,3 @@ And
 <?php endforeach; ?>
 ```
 
-Hi
