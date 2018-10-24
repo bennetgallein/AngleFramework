@@ -13,6 +13,8 @@ class Syntax {
 
     public $tokens = array();
 
+    private $viewsFolder = "views";
+
     public function __construct() {
 
         // { :var = x }
@@ -59,10 +61,10 @@ class Syntax {
 
 
         // { css /url/ist/genau/hier.css }
-        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>views/$2" />');
+        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2" />');
 
         // { js /url/to/script.js }
-        $this->addRule('/({ js (.*) })/', '<script src="<?php echo APP_URL; ?>views/$2"></script>');
+        $this->addRule('/({ js (.*) })/', '<script src="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2"></script>');
     }
 
     public function addRule($pattern, $replacement) {
@@ -75,6 +77,14 @@ class Syntax {
 
     public function getTokens() {
         return $this->tokens;
+    }
+
+    public function setViewsFolder($viewsFolder) {
+        $this->viewsFolder = $viewsFolder;
+    }
+
+    public function getViewsFolder() {
+        return $this->viewsFolder;
     }
 
 }

@@ -15,20 +15,8 @@ class Engine {
     protected $tokens;
     private $stream;
 
-    public function getStream() {
-        return $this->stream;
-    }
-
-    public function setStream($stream) {
-        $this->stream = $stream;
-    }
-
-    private function localCompile($stream) {
-        $this->setStream($stream);
+    public function __construct() {
         $this->tokens = new Syntax();
-        foreach ($this->tokens->getTokens() as $token) {
-            $this->stream = ($token['callback']) ? preg_replace_callback($token['pattern'], $token['replacement'], $this->getStream()) : preg_replace($token['pattern'], $token['replacement'], $this->getStream());
-        }
     }
 
     public function render($view, $params = []) {
@@ -48,6 +36,21 @@ class Engine {
         ob_start();
         include $file;
         ob_end_flush();
+    }
+
+    private function localCompile($stream) {
+        $this->setStream($stream);
+        foreach ($this->tokens->getTokens() as $token) {
+            $this->stream = ($token['callback']) ? preg_replace_callback($token['pattern'], $token['replacement'], $this->getStream()) : preg_replace($token['pattern'], $token['replacement'], $this->getStream());
+        }
+    }
+
+    public function getStream() {
+        return $this->stream;
+    }
+
+    public function setStream($stream) {
+        $this->stream = $stream;
     }
 
     public function compile($view, $params = []) {
@@ -70,5 +73,9 @@ class Engine {
         ob_end_clean();
         return $cont;
 
+    }
+
+    public function setViewsFolder($new) {
+        $this->tokens->setViewsFolder($new);
     }
 }
