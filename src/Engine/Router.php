@@ -63,7 +63,7 @@ class Router {
                 continue;
             }
             $params = array();
-            if (preg_match_all('/:([\w-%]+)/', $routes->getUrl(), $argument_keys)) {
+            if (preg_match_all('/:([\w\-%]+)/', $routes->getUrl(), $argument_keys)) {
                 $argument_keys = $argument_keys[1];
                 if(count($argument_keys) !== (count($matches) -1)) {
                     continue;
