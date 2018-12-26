@@ -58,12 +58,12 @@ class Router {
                 $requestUrl = str_replace($currentDir, '', $requestUrl);
             }
             $route = rtrim($routes->getRegex(), '/');
-            $pattern = '@^' . preg_quote($this->basePath) . $route . '/?$@i';
+            $pattern = '<^' . preg_quote($this->basePath) . $route . '/?$>i';
             if (!preg_match($pattern, $requestUrl, $matches)) {
                 continue;
             }
             $params = array();
-            if (preg_match_all('/:([\w\-%]+)/', $routes->getUrl(), $argument_keys)) {
+            if (preg_match_all('<:([\w\-%]+)>', $routes->getUrl(), $argument_keys)) {
                 $argument_keys = $argument_keys[1];
                 if(count($argument_keys) !== (count($matches) -1)) {
                     continue;
