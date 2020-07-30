@@ -15,7 +15,7 @@
     },
     "require": {
         "php": ">=7.0",
-        "mikey179/vfsStream": "^1.6",
+        "mikey179/vfsstream": "^1.6",
         "fig/http-message-util": "^1.1",
         "tracy/tracy": "^2.4"
     }
