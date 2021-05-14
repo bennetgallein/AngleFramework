@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: bennet
@@ -57,7 +58,7 @@ class Syntax {
 
         // { include("file") }
         $this->addRule('/({ include\("(.*)"\) })/', '<?php $engine->render("$2"); ?>');
-
+        $this->addRule('/({ include_raw\("(.*)"\) })/', '<?php include("$2"); ?>');
 
         // { css /url/ist/genau/hier.css }
         $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2" />');
@@ -85,5 +86,4 @@ class Syntax {
     public function getViewsFolder() {
         return $this->viewsFolder;
     }
-
 }
