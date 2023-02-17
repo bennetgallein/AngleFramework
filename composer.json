@@ -1,23 +1,22 @@
 {
-    "name": "bennetgallein/angle-framework",
-    "description": "A PHP Framework for the Angle Network",
-    "type": "project",
-    "authors": [
-        {
-            "name": "bennetgallein",
-            "email": "bennet@intranetproject.net"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Angle\\": "src/"
-        }
-    },
-    "require": {
-        "php": ">=7.0",
-        "mikey179/vfsstream": "^1.6",
-        "fig/http-message-util": "^1.1",
-        "tracy/tracy": "^2.4"
+  "name": "bennetgallein/angle-framework",
+  "description": "A PHP Framework for the Angle Network",
+  "type": "project",
+  "authors": [
+    {
+      "name": "bennetgallein",
+      "email": "bennet@intranetproject.net"
     }
-
+  ],
+  "autoload": {
+    "psr-4": {
+      "Angle\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "mikey179/vfsstream": "^1.6",
+    "fig/http-message-util": "^1.1",
+    "tracy/tracy": "^2.4"
+  }
 }

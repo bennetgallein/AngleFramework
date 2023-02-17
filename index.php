@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: bennet
@@ -14,8 +15,7 @@ use \Angle\Engine\RouterEngine\Router;
 
 use Tracy\Debugger;
 
-Debugger::enable();
-
+Debugger::enable(Debugger::DEBUG);
 $engine = new \Angle\Engine\Template\Engine();
 
 $router = new Collection();

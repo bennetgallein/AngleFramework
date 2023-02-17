@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: bennet
@@ -62,17 +63,18 @@ class Engine {
 
         vfsStream::setup($viewPath);
 
-        $file = vfsStream::url($view . '.php');
-        $this->localCompile(file_get_contents($view));
+        if ($view) {
+            $file = vfsStream::url($view . '.php');
+            $this->localCompile(file_get_contents($view));
 
-        file_put_contents($file, $this->getStream());
-
-        ob_start();
-        include $file;
-        $cont = ob_get_contents();
-        ob_end_clean();
-        return $cont;
-
+            file_put_contents($file, $this->getStream());
+            ob_start();
+            include $file;
+            $cont = ob_get_contents();
+            ob_end_clean();
+            return $cont;
+        }
+        return null;
     }
 
     public function setViewsFolder($new) {
