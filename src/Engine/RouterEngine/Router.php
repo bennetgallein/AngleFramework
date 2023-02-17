@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: bennet
@@ -35,8 +36,7 @@ class Router {
     }
 
     public function matchCurrentRequest() {
-        $requestMethod = (
-            isset($_POST['_method'])
+        $requestMethod = (isset($_POST['_method'])
             && ($_method = strtoupper($_POST['_method']))
             && in_array($_method, array(RequestMethodInterface::METHOD_PUT, RequestMethodInterface::METHOD_DELETE), true)
         ) ? $_method : $_SERVER['REQUEST_METHOD'];
@@ -51,7 +51,7 @@ class Router {
     public function match($requestUrl, $requestMethod = RequestMethodInterface::METHOD_GET) {
         $currentDir = dirname($_SERVER['SCRIPT_NAME']);
         foreach ($this->routes->all() as $routes) {
-            if (! in_array($requestMethod, (array)$routes->getMethods(), true)) {
+            if (!in_array($requestMethod, (array)$routes->getMethods(), true)) {
                 continue;
             }
             if ('/' !== $currentDir) {
@@ -65,12 +65,12 @@ class Router {
             $params = array();
             if (preg_match_all('<:([\w\-%]+)>', $routes->getUrl(), $argument_keys)) {
                 $argument_keys = $argument_keys[1];
-                if(count($argument_keys) !== (count($matches) -1)) {
+                if (count($argument_keys) !== (count($matches) - 1)) {
                     continue;
                 }
                 foreach ($argument_keys as $key => $name) {
-                    if (isset($matches[$key+1])) {
-                        $params[$name] = $matches[$key+1];
+                    if (isset($matches[$key + 1])) {
+                        $params[$name] = $matches[$key + 1];
                     }
                 }
             }
@@ -95,7 +95,7 @@ class Router {
             // loop trough parameter names, store matching value in $params array
             foreach ($param_keys as $key) {
                 if (isset($params[$key])) {
-                    $url = preg_replace('/:'.preg_quote($key,'/').'/', $params[$key], $url, 1);
+                    $url = preg_replace('/:' . preg_quote($key, '/') . '/', $params[$key], $url, 1);
                 }
             }
         }
@@ -103,7 +103,7 @@ class Router {
     }
 
     public static function parseConfig(array $config) {
-        $collection = new RouteCollection();
+        $collection = new Collection();
         foreach ($config['routes'] as $name => $route) {
             $collection->attachRoute(new Route($route[0], array(
                 '_controller' => str_replace('.', '::', $route[1]),
