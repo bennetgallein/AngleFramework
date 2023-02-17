@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f32abfb7c990337308d68113d83aefe",
+    "content-hash": "7e7e1a14f17721205d729f7ddb681992",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -112,7 +112,9 @@
                 "wiki": "https://github.com/bovigo/vfsStream/wiki"
             },
             "time": "2022-02-23T02:02:42+00:00"
-        },
+        }
+    ],
+    "packages-dev": [
         {
             "name": "tracy/tracy",
             "version": "v2.9.6",
@@ -188,7 +190,6 @@
             "time": "2023-02-06T15:31:40+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
