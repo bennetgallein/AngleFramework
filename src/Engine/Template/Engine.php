@@ -58,7 +58,6 @@ class Engine {
         $params["app_url"] = APP_URL;
         $params['engine'] = $this;
         if (!empty($params)) extract($params);
-        $viewArray = explode('/', $view);
         $viewPath = implode('/', $viewArray);
 
         vfsStream::setup($viewPath);
@@ -74,7 +73,7 @@ class Engine {
             ob_end_clean();
             return $cont;
         }
-        return null;
+        return "";
     }
 
     public function setViewsFolder($new) {
