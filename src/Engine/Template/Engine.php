@@ -58,9 +58,8 @@ class Engine {
         $params["app_url"] = APP_URL;
         $params['engine'] = $this;
         if (!empty($params)) extract($params);
-        $viewPath = implode('/', $viewArray);
 
-        vfsStream::setup($viewPath);
+        vfsStream::setup($view);
 
         if ($view) {
             $file = vfsStream::url($view . '.php');
