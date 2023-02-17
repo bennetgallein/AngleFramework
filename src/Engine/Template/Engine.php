@@ -59,9 +59,9 @@ class Engine {
         $params['engine'] = $this;
         if (!empty($params)) extract($params);
 
-        vfsStream::setup($view);
 
         if ($view) {
+            vfsStream::setup($view);
             $file = vfsStream::url($view . '.php');
             $this->localCompile(file_get_contents($view));
 
