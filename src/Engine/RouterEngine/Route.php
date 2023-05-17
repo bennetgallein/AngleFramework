@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: bennet
@@ -66,11 +67,17 @@ class Route {
     private $config;
 
     /**
+     * the return value of the function
+     *
+     * @var any
+     */
+    private $output;
+
+    /**
      * @param       $resource
      * @param array $config
      */
-    public function __construct($resource, array $config)
-    {
+    public function __construct($resource, array $config) {
         $this->url        = $resource;
         $this->config     = $config;
         $this->methods    = isset($config['methods']) ? (array) $config['methods'] : array();
@@ -81,13 +88,11 @@ class Route {
         $this->action     = isset($action[1]) ? $action[1] : null;
     }
 
-    public function getUrl()
-    {
+    public function getUrl() {
         return $this->url;
     }
 
-    public function setUrl($url)
-    {
+    public function setUrl($url) {
         $url = (string)$url;
 
         // make sure that the URL is suffixed with a forward slash
@@ -98,49 +103,48 @@ class Route {
         $this->url = $url;
     }
 
-    public function getTarget()
-    {
+    public function setOutput($out) {
+        $this->output = $out;
+    }
+
+    public function getOutput() {
+        return $this->output;
+    }
+
+    public function getTarget() {
         return $this->target;
     }
 
-    public function setTarget($target)
-    {
+    public function setTarget($target) {
         $this->target = $target;
     }
 
-    public function getMethods()
-    {
+    public function getMethods() {
         return $this->methods;
     }
 
-    public function setMethods(array $methods)
-    {
+    public function setMethods(array $methods) {
         $this->methods = $methods;
     }
 
-    public function getName()
-    {
+    public function getName() {
         return $this->name;
     }
 
-    public function setName($name)
-    {
+    public function setName($name) {
         $this->name = (string)$name;
     }
 
-    public function setFilters(array $filters, $parametersByName = false)
-    {
+    public function setFilters(array $filters, $parametersByName = false) {
         $this->filters          = $filters;
         $this->parametersByName = $parametersByName;
     }
 
-    public function getRegex()
-    {
+    public function getRegex() {
         return preg_replace_callback('/(:\w+)/', array(&$this, 'substituteFilter'), $this->url);
     }
 
-    private function substituteFilter($matches)
-    {
+    private function substituteFilter($matches) {
         if (isset($matches[1], $this->filters[$matches[1]])) {
             return $this->filters[$matches[1]];
         }
@@ -148,18 +152,15 @@ class Route {
         return '([\w\-%]+)';
     }
 
-    public function getParameters()
-    {
+    public function getParameters() {
         return $this->parameters;
     }
 
-    public function setParameters(array $parameters)
-    {
+    public function setParameters(array $parameters) {
         $this->parameters = array_merge($this->parameters, $parameters);
     }
 
-    public function dispatch()
-    {
+    public function dispatch() {
         $action = explode('::', $this->config['_controller']);
         $instance = new $action[0];
         $_SERVER['debug'] = ($this->parameters);
@@ -168,16 +169,14 @@ class Route {
         }
 
         if (empty($action[1]) || trim($action[1]) === '') {
-            call_user_func_array($instance, $this->parameters);
-
-            return ;
+            $this->setOutput(call_user_func_array($instance, $this->parameters));
+            return;
         }
 
-        call_user_func_array(array($instance, $action[1]), $this->parameters);
+        $this->setOutput(call_user_func_array(array($instance, $action[1]), $this->parameters));
     }
 
-    public function getAction()
-    {
+    public function getAction() {
         return $this->action;
     }
 }
