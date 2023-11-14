@@ -16,16 +16,17 @@ class Engine {
     protected $tokens;
     private $stream;
 
-    public function __construct($viewsFolder = "views") {
-        $this->tokens = new Syntax($viewsFolder);
+    public function __construct($viewsFolder = "views", $additions = []) {
+        $this->tokens = new Syntax($viewsFolder, $additions);
     }
 
     public function render($view, $params = []) {
         $params["app_url"] = APP_URL;
-        $params['engine'] = $this;
-        if (!empty($params)) extract($params);
+        $params['engine']  = $this;
+        if (!empty($params))
+            extract($params);
         $viewArray = explode('/', $view);
-        $viewPath = implode('/', $viewArray);
+        $viewPath  = implode('/', $viewArray);
 
         vfsStream::setup($viewPath);
 
@@ -56,8 +57,9 @@ class Engine {
 
     public function compile($view, $params = []) {
         $params["app_url"] = APP_URL;
-        $params['engine'] = $this;
-        if (!empty($params)) extract($params);
+        $params['engine']  = $this;
+        if (!empty($params))
+            extract($params);
 
 
         if ($view) {

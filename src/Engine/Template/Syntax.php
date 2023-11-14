@@ -16,7 +16,7 @@ class Syntax {
 
     private $viewsFolder;
 
-    public function __construct($viewsFolder) {
+    public function __construct($viewsFolder, $additions = []) {
         $this->viewsFolder = $viewsFolder;
         // { :var = x }
         // {:var} & { :var }
@@ -61,10 +61,10 @@ class Syntax {
         $this->addRule('/({ include_raw\("(.*)"\) })/', '<?php include("$2"); ?>');
 
         // { css /url/ist/genau/hier.css }
-        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2" />');
+        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2' . ($additions['appendix'] ?? '') . '" />');
 
         // { js /url/to/script.js }
-        $this->addRule('/({ js (.*) })/', '<script src="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2"></script>');
+        $this->addRule('/({ js (.*) })/', '<script src="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2' . ($additions['appendix'] ?? '') . '"></script>');
     }
 
     public function addRule($pattern, $replacement) {
