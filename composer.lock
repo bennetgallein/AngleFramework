@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e7e1a14f17721205d729f7ddb681992",
+    "content-hash": "0f31fb7dcd1c12a03c90ff7eb61e13d4",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -117,22 +117,22 @@
     "packages-dev": [
         {
             "name": "tracy/tracy",
-            "version": "v2.9.6",
+            "version": "v2.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "80533f4bda19ce8138c0fc984743533e2a0e1c5c"
+                "reference": "ec6637866d6836ef6f8de2bab63ae7708b23bcd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/80533f4bda19ce8138c0fc984743533e2a0e1c5c",
-                "reference": "80533f4bda19ce8138c0fc984743533e2a0e1c5c",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/ec6637866d6836ef6f8de2bab63ae7708b23bcd7",
+                "reference": "ec6637866d6836ef6f8de2bab63ae7708b23bcd7",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-session": "*",
-                "php": ">=7.2 <8.3"
+                "php": ">=8.0 <8.4"
             },
             "conflict": {
                 "nette/di": "<3.0"
@@ -140,6 +140,7 @@
             "require-dev": {
                 "latte/latte": "^2.5",
                 "nette/di": "^3.0",
+                "nette/http": "^3.0",
                 "nette/mail": "^3.0",
                 "nette/tester": "^2.2",
                 "nette/utils": "^3.0",
@@ -149,7 +150,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.9-dev"
+                    "dev-master": "2.10-dev"
                 }
             },
             "autoload": {
@@ -185,9 +186,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.9.6"
+                "source": "https://github.com/nette/tracy/tree/v2.10.3"
             },
-            "time": "2023-02-06T15:31:40+00:00"
+            "time": "2023-07-30T13:56:20+00:00"
         }
     ],
     "aliases": [],
@@ -196,8 +197,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.4"
+        "php": ">=8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
