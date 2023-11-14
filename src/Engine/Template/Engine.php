@@ -20,6 +20,14 @@ class Engine {
         $this->tokens = new Syntax($viewsFolder, $additions);
     }
 
+    public function addToAdditions($a) {
+        $this->tokens->addToAdditions($a);
+    }
+
+    public function initSyntax() {
+        $this->tokens->initSyntax();
+    }
+
     public function render($view, $params = []) {
         $params["app_url"] = APP_URL;
         $params['engine']  = $this;

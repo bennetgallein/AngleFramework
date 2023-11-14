@@ -1,6 +1,6 @@
 { include("views/header.tmp") }
 <head>
-    <link rel="stylesheet" href="css/style.css" />
+{ css css/style.css }
 </head>
 <body>
 { if :test }
@@ -8,4 +8,5 @@
         { :posts.test1 }
     { endforeach }
 { endif }
+
 </body>

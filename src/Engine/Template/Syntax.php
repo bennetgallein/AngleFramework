@@ -13,11 +13,39 @@ namespace Angle\Engine\Template;
 class Syntax {
 
     public $tokens = array();
+    private $additions = [];
 
     private $viewsFolder;
 
     public function __construct($viewsFolder, $additions = []) {
         $this->viewsFolder = $viewsFolder;
+        $this->additions   = $additions;
+    }
+
+    public function addRule($pattern, $replacement) {
+        if (is_callable($replacement)) {
+            $this->tokens[] = ['pattern' => $pattern, 'replacement' => $replacement, 'callback' => true];
+        } else {
+            $this->tokens[] = ['pattern' => $pattern, 'replacement' => $replacement, 'callback' => false];
+        }
+    }
+
+    public function getTokens() {
+        return $this->tokens;
+    }
+
+    public function setViewsFolder($viewsFolderNew) {
+        $this->viewsFolder = $viewsFolderNew;
+    }
+
+    public function getViewsFolder() {
+        return $this->viewsFolder;
+    }
+    public function addToAdditions($a) {
+        $this->additions[] = [];
+    }
+
+    public function initSyntax() {
         // { :var = x }
         // {:var} & { :var }
         $this->addRule("/{ :([\w\d]+) }/", "<?= $$1; ?>");
@@ -61,29 +89,10 @@ class Syntax {
         $this->addRule('/({ include_raw\("(.*)"\) })/', '<?php include("$2"); ?>');
 
         // { css /url/ist/genau/hier.css }
-        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2' . ($additions['appendix'] ?? '') . '" />');
+        $this->addRule('/({ css (.*) })/', '<link rel="stylesheet" href="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2' . ($this->additions['appendix'] ?? '') . '" />');
 
         // { js /url/to/script.js }
-        $this->addRule('/({ js (.*) })/', '<script src="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2' . ($additions['appendix'] ?? '') . '"></script>');
-    }
+        $this->addRule('/({ js (.*) })/', '<script src="<?php echo APP_URL; ?>' . $this->viewsFolder . '/$2' . ($this->additions['appendix'] ?? '') . '"></script>');
 
-    public function addRule($pattern, $replacement) {
-        if (is_callable($replacement)) {
-            $this->tokens[] = ['pattern' => $pattern, 'replacement' => $replacement, 'callback' => true];
-        } else {
-            $this->tokens[] = ['pattern' => $pattern, 'replacement' => $replacement, 'callback' => false];
-        }
-    }
-
-    public function getTokens() {
-        return $this->tokens;
-    }
-
-    public function setViewsFolder($viewsFolderNew) {
-        $this->viewsFolder = $viewsFolderNew;
-    }
-
-    public function getViewsFolder() {
-        return $this->viewsFolder;
     }
 }
