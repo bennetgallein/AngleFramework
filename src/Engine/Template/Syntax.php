@@ -42,7 +42,7 @@ class Syntax {
         return $this->viewsFolder;
     }
     public function addToAdditions($a) {
-        $this->additions[] = [];
+        $this->additions = array_merge($this->additions, $a);
     }
 
     public function initSyntax() {
